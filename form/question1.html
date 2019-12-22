@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 1000px;
+			height: 300px;
+			margin-left: auto;
+			background-color: lightblue;
+			text-align: center;
+			margin-top: 50px;
+			margin-right: auto;
+		}
+		h2{
+			padding-top: 100px;
+			
+		}
+		#sub{
+			width: 100px;
+			height: 60px;
+			background-color: lightpink;
+			font-size: 20px;
+			margin-left: 450px;
+		}
+	</style>
+</head>
+<body>
+	<form name="frm" onsubmit="return sbmt()">
+		<div >
+
+			<h2>Q1: Where are we?</h2><br>
+			<input type="radio" value="home" name="question1"  required>home
+			<input type="radio" value="university"name="question1" >university
+			<input type="radio" value="street" name="question1">street
+</div>
+		<input type="submit" value="Next " id="sub">
+		
+	</form>
+
+
+
+	<script type="text/javascript">
+		function sbmt(){
+			var form = document.frm;
+			var Q1 = form.elements["question1"].value;
+			var score=0;
+			if(Q1 == "university"){
+				score++;
+			}
+				window.location.href="question2.html?mark="+score;
+				return false;
+		}
+
+	</script>
+
+</body>
+</html>

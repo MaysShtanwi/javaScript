@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 1000px;
+			height: 300px;
+			margin-left: auto;
+			background-color: lightblue;
+			text-align: center;
+			margin-top: 50px;
+			margin-right: auto;
+		}
+		h2{
+			padding-top: 100px;
+			
+		}
+		#sub{
+			width: 100px;
+			height: 60px;
+			background-color: lightpink;
+			font-size: 20px;
+			margin-left: 450px;
+		}
+	</style>
+</head>
+<body>
+	<form name="frm" onsubmit="return sbmt()">
+		<div>
+
+			<h2 >Q3: What will you do after 10 years?</h2><br>
+			<input type="radio" value="Get married" name="question3" required>Get married
+			<input type="radio" value="create a startup company" name="question3">create a startup company
+			<input type="radio" value="finish a PHD degree" name="question3">finish a PHD degree
+	
+		</div>
+
+		<input type="submit" value="submit " id="sub">
+		
+	</form>
+	<script type="text/javascript">
+
+		function sbmt(){
+			var form = document.frm;
+			var Q3 = form.elements["question3"].value;
+			var url_string = window.location;
+		var url = new URL(url_string);
+		var score= url.searchParams.get("mark");
+		
+			if(Q3 == "finish a PHD degree"){
+				score++;
+			}if(confirm("Are you sure you want to submit your answers?")){
+				window.location.href="process.html?mark="+score;
+				return false;
+			}else{
+				return false;
+			}
+		}
+		
+	</script>
+
+	
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form id="myForm">
+		<label>UnitPrice</label>
+		<input type="number" name="" id="no1" >
+		<label>Quantity</label>
+		<input type="number" name="" id="no2" >
+		<button type="button" onclick="tables()" id="myBtn">Create!</button>
+	</form>
+
+	<table id="tab" border="3">
+		<tr>
+			<td>Item</td>
+			<td>Unit Price</td>
+			<td>Qty</td>
+			<td>total</td>
+		</tr>
+		<tr id="jc">
+			<td>Juice</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+
+		</tr>
+		<tr id="ch">
+			<td>chocolate</td>
+						<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<tr id="cp">
+			<td>chips</td>
+						<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<tr id="mk">
+			<td>milk</td>
+						<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<tr id="ps">
+			<td>pepsi</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+	</table>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		function tables(){
+		
+
+		
+			/*rn = window.prompt("Input the unit price", "0");
+			cn = window.prompt("Input the quantity","0");
+			content = window.prompt("Are you sure that your inputs are correct?");  */
+			for(i=1;i<=5;i++){
+	var m = document.getElementById("no1").value;
+			var h = document.getElementById("no2").value;
+			var sum = parseInt (m) *  parseInt(h);
+			document.getElementById("tab").value=sum;
+			
+
+				if (document.getElementById("no1").value === "") {
+					alert("empty");
+					return false;
+				}
+				else {
+
+
+
+				switch(i){
+
+					case 1:
+					var row = document.getElementById("tab").rows;
+					var y=row[1].cells
+    y[1].innerHTML=parseInt(m);
+    y[2].innerHTML=parseInt(h);
+    y[3].innerHTML=sum;
+					alert("new input");
+					break;
+
+					case 2:
+					var row = document.getElementById("tab").rows;
+					var y=row[2].cells
+    y[1].innerHTML=parseInt(m);
+    y[2].innerHTML=parseInt(h);
+    y[3].innerHTML=sum;
+					var form = document.getElementById("myForm");
+					form.reset();
+					break;
+
+
+					case 3:
+					var row = document.getElementById("tab").rows;
+					var y=row[3].cells
+    y[1].innerHTML=parseInt(m);
+    y[2].innerHTML=parseInt(h);
+    y[3].innerHTML=sum;
+					var form = document.getElementById("myForm");
+					form.reset();
+					break;
+
+					case 4:
+					var row = document.getElementById('mk');
+
+					row.insertCell(1).innerHTML = parseInt(m);
+					row.insertCell(2).innerHTML = parseInt(h);
+					row.insertCell(3).innerHTML = sum;
+					var form = document.getElementById("myForm");
+					form.reset();
+					break;
+
+					case 5:
+					var row = document.getElementById('ps');
+
+					row.insertCell(1).innerHTML = parseInt(m);
+					row.insertCell(2).innerHTML = parseInt(h);
+					row.insertCell(3).innerHTML = sum;
+					var form = document.getElementById("myForm");
+					form.reset();
+					break;
+
+				}
+
+}
+
+
+			}
+}
+
+
+		</script>
+
+
+
+
+
+
+	</body>
+	</html>

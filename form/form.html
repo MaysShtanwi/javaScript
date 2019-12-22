@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+
+<!--
+	<form>
+
+		 <label>Email</label>
+		<input type="text" id="txt" placeholder="Email">
+		<br>
+		<label>Password</label>
+		<input type="text" name="" placeholder="Password">
+		<br>
+		<button type="submit" onclick="submitform()">submit</button>
+	</form> -->
+	<form>
+		<label>#rows</label>
+		<input type="number" name="" id="no1">
+		<label>#cols</label>
+		<input type="number" name="" id="no2">
+		<button type="button" onclick="tables()">sumbit</button>
+	</form>
+	<div id="tab"></div>
+	<script type="text/javascript">
+
+	/*function submitform(){
+		alert("Japan");
+		var email=document.getElementById("txt").value;
+		alert(email);
+	}*/
+
+
+
+	function tables(){
+		var m    = "<br><table border='3'>";
+		var cols = document.getElementById("no2").value;
+		var rows = document.getElementById("no1").value;
+		for(i=0;i<rows;i++)
+		{
+			m+="<tr>"
+			for(j=0;j<cols;j++)
+			{
+				m+="<td>Mays</td>"
+
+			}
+			m+="</tr>"
+		}
+		m+="</table>";
+		document.getElementById("tab").innerHTML=m;
+	}
+
+</script>
+
+
+
+
+</body>
+</html>

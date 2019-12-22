@@ -1,0 +1,256 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form id="myForm">
+		<label>UnitPrice</label>
+		<input type="number" name="" id="no1" >
+		<label>Quantity</label>
+		<input type="number" name="" id="no2" >
+		<button type="button" onclick="tables()" id="myBtn">Create!</button>
+	</form>
+
+	<table id="tab" border="3">
+		<tr>
+			<td>Item</td>
+			<td>Unit Price</td>
+			<td>Qty</td>
+			<td>total</td>
+		</tr>
+		<tr id="jc">
+			<td>Juice</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+
+		</tr>
+		<tr id="ch">
+			<td>chocolate</td>
+						<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<tr id="cp">
+			<td>chips</td>
+						<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<tr id="mk">
+			<td>milk</td>
+						<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<tr id="ps">
+			<td>pepsi</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+	</table>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		
+var x = document.getElementById("myBtn");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("click", myThirdFunction);
+
+function myFunction() {
+var row = document.getElementById("tab").rows;
+					var y=row[1].cells
+    y[1].innerHTML=parseInt(m);
+    y[2].innerHTML=parseInt(h);
+    y[3].innerHTML=sum;}
+
+function mySecondFunction() {
+var row = document.getElementById("tab").rows;
+					var y=row[2].cells
+    y[1].innerHTML=parseInt(m);
+    y[2].innerHTML=parseInt(h);
+    y[3].innerHTML=sum;}
+
+function myThirdFunction() {
+
+var row = document.getElementById("tab").rows;
+					var y=row[3].cells
+    y[1].innerHTML=parseInt(m);
+    y[2].innerHTML=parseInt(h);
+    y[3].innerHTML=sum;}
+
+
+
+		</script>
+
+
+
+
+
+
+	</body>
+	</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	
+
+
+	<table id="tab" border="3">
+		<tr>
+			<td>Item</td>
+			<td>Unit Price</td>
+			<td>Qty</td>
+			<td>total</td>
+		</tr>
+		<tr >
+			<td>Juice</td>
+			<td><input type="number" id="juice-unit" name="" onchange="sum()" ></td>
+			<td><input type="number" id="juice-qty" name="" onchange="sum()" ></td>
+			<td><input type="number" id="juice-total" name="" onchange ="sum()"></td>
+
+
+		</tr>
+		<tr >
+			<td>chocolate</td>
+			<td><input type="number" id="choco-unit" name="" onchange="sum()"></td>
+			<td><input type="number" id="choco-qty" name="" onchange="sum()"></td>
+			<td><input type="number" id="choco-total" name="" onchange="sum()" readonly></td>
+
+		</tr>
+		<tr >
+			<td>chips</td>
+			<td><input type="number" id="chips-unit" name="" onchange="sum()"></td>
+			<td><input type="number" id="chips-qty" name=""onchange="sum()"></td>
+			<td><input type="number" id="chips-total" name=""onchange="sum()" readonly></td>
+
+		</tr>
+		<tr >
+			<td>milk</td>
+			<td><input type="number" id="milk-unit" name=""onchange="sum()"></td>
+			<td><input type="number" id="milk-qty" name=""onchange="sum()"></td>
+			<td><input type="number" id="milk-total" name=""onchange="sum()" readonly></td>
+
+		</tr>
+		<tr >
+			<td>pepsi</td>
+			<td><input type="number" id="pepsi-unit" name=""onchange="sum()"></td>
+			<td><input type="number" id="pepsi-qty" name=""onchange="sum()"></td>
+			<td><input type="number" id="pepsi-total" name=""onchange="sum()" readonly></td>
+
+		</tr>
+		<tr>
+			<td>final total</td>
+			<td ><input type="number" id="tot" name="" onmouseover="tot()" readonly></td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+
+		function sum(){
+			var m = this.value;
+			var h = this.value;
+			var sum = parseInt (m) *  parseInt(h);
+			var x=this.value=parseInt(m);
+			var y=this.value=parseInt(h);
+			var z=this.value;
+			
+		}
+
+/*
+		function chocolate(){
+			var m = document.getElementById("choco-unit").value;
+			var h = document.getElementById("choco-qty").value;
+			var sum = parseInt (m) *  parseInt(h);
+			document.getElementById("choco-unit").value=parseInt(m);
+			document.getElementById("choco-qty").value=parseInt(h);
+			document.getElementById("choco-total").value=sum;
+
+		}
+		function chips(){
+			var m = document.getElementById("chips-unit").value;
+			var h = document.getElementById("chips-qty").value;
+			var sum = parseInt (m) *  parseInt(h);
+			document.getElementById("chips-unit").value=parseInt(m);
+			document.getElementById("chips-qty").value=parseInt(h);
+			document.getElementById("chips-total").value=sum;
+
+		}
+		function milk(){
+			var m = document.getElementById("milk-unit").value;
+			var h = document.getElementById("milk-qty").value;
+			var sum = parseInt (m) *  parseInt(h);
+			document.getElementById("milk-unit").value=parseInt(m);
+			document.getElementById("milk-qty").value=parseInt(h);
+			document.getElementById("milk-total").value=sum;
+
+		}
+		function pepsi(){
+			var m = document.getElementById("pepsi-unit").value;
+			var h = document.getElementById("pepsi-qty").value;
+			var sum = parseInt (m) *  parseInt(h);
+			document.getElementById("pepsi-unit").value=parseInt(m);
+			document.getElementById("pepsi-qty").value=parseInt(h);
+			document.getElementById("pepsi-total").value=sum;
+
+		}
+		function tot(){
+			var x = document.getElementById("juice-total").value;
+			var o = document.getElementById("chips-total").value;
+			var u = document.getElementById("choco-total").value;
+			var y = document.getElementById("milk-total").value;
+			var z = document.getElementById("pepsi-total").value;
+
+			var n = parseInt(x)+parseInt(o)+parseInt(u)+parseInt(y)+parseInt(z);
+			document.getElementById("tot").value=n;
+
+		}*/
+	</script>
+
+
+
+
+
+
+</body>
+</html>	

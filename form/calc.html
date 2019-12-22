@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form >
+		<label>Num1</label>
+		<input type="number" name="" id="no1">
+		<label>Num2</label>
+		<input type="number" name="" id="no2">
+		<button type="button" onclick="addition()">+</button>
+		<button type="button" onclick="subtraction()">-</button>
+		<button type="button" onclick="multi()">*</button>
+		<button type="button" onclick="divi()">/</button>
+
+
+	</form>
+	
+	<input id="tab" type="number" >
+
+
+	<script type="text/javascript">
+		
+		function addition(){
+			var m = document.getElementById("no1").value;
+			var h = document.getElementById("no2").value;
+			var sum = parseInt (m) +  parseInt(h);
+			document.getElementById("tab").value=sum;
+		}
+		function subtraction(){
+			var m = document.getElementById("no1").value;
+			var h = document.getElementById("no2").value;
+			var sum =  parseInt(m) -  parseInt(h);
+			document.getElementById("tab").value=sum;
+		}
+		function multi(){
+			var m = document.getElementById("no1").value;
+			var h = document.getElementById("no2").value;
+			var sum =  parseInt(m) *  parseInt(h);
+			document.getElementById("tab").value=sum;
+		}
+		function divi(){
+			var m = document.getElementById("no1").value;
+			var h = document.getElementById("no2").value;
+			var sum =  parseInt(m) /  parseInt(h);
+			document.getElementById("tab").value=sum;
+		}
+
+
+	</script>
+</body>
+</html>

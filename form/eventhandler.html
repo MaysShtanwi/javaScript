@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<h1 id="one" onmouseover="mouseOver()" onmouseout="mouseOut() ">What is the date of today?</h1>
+
+
+
+
+<script type="text/javascript">
+	
+function mouseOver()
+{
+	var today=new Date();
+	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+document.getElementById("one").innerHTML=date;
+  document.getElementById("one").style.color = "pink";
+
+}
+
+
+              
+        function mouseOut()
+        {
+            var display = document.getElementById('one');
+            display.innerHTML = "";
+            display.innerHTML = "What is the date of today?";
+             document.getElementById("one").style.color = "purple";
+        }
+
+</script>
+
+
+
+
+</body>
+</html>

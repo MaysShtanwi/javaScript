@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input type="file" id="add" accept="image/*"  multiple>
+<button onclick="add()">Add</button>
+<br>
+
+<img id="photo" style="width: 500px; height: 900px;"/> 
+	
+
+
+
+<script type="text/javascript">
+	function add(){
+		
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("add").files[0]);
+
+        oFReader.onload = function (oFREvent) {
+            document.getElementById("photo").src = oFREvent.target.result;
+        };
+    
+
+	}
+
+</script>
+
+
+
+
+</body>
+</html>

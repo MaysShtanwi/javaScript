@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 1000px;
+			height: 300px;
+			margin-left: auto;
+			background-color: lightblue;
+			text-align: center;
+			margin-top: 50px;
+			margin-right: auto;
+		}
+		h2{
+			padding-top: 100px;
+			
+		}
+		#sub{
+			width: 100px;
+			height: 60px;
+			background-color: lightpink;
+			font-size: 20px;
+			margin-left: 450px;
+		}
+	</style>
+</head>
+<body>
+	<form name="frm" onsubmit="return sbmt()">
+		<div>
+
+			<h2 >Q2: What are you?</h2><br>
+			<input type="radio" value="hisham" name="question2" required>hisham
+			<input type="radio" value="machine" name="question2">machine
+			<input type="radio" value="human" name="question2">human
+
+
+		</div>
+
+		<input type="submit" value="Next " id="sub">
+		
+	</form>
+	<script type="text/javascript">
+
+		function sbmt(){
+			var form = document.frm;
+			var Q2 = form.elements["question2"].value;
+			var url_string = window.location;
+		var url = new URL(url_string);
+		var score= url.searchParams.get("mark");
+		
+			if(Q2 == "human"){
+				score++;
+			}
+				window.location.href="question3.html?mark="+score;
+				return false;
+		}
+		
+	</script>
+
+	
+</body>
+</html>
