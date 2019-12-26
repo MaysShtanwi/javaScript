@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+
+
+	</style>
+</head>
+<body>
+	<form name="frm" >
+		<input type="file" name="image" multiple>
+		<!-- <input type="submit" name="" value="add"> -->
+	</form>
+	<button type="button" onclick="add()">Add</button>
+	<button type="button" onclick="rmv()">delete</button>
+	<div id="show" ></div>
+
+	<script type="text/javascript">
+	
+		function add(){
+			
+			var form = document.frm;
+			var img = form.elements["image"].value;
+			///var arr = [];
+			//arr.push(img);
+			//console.log(arr);
+			localStorage.setItem("image", img);
+			var name = localStorage.getItem("image");
+			var m = "file:///C:/Users/ahmed/Downloads/";
+			var v = name.split('\\');
+			var g = "<img src='"+m+v[2]+"'>";
+			
+			document.getElementById("show").innerHTML+=g;
+			
+			return false;
+
+
+
+		}
+		
+		
+
+
+		function rmv(){
+			document.getElementById("show").innerHTML=	localStorage.removeItem("image");
+					
+					}
+
+
+	</script>
+
+</body>
+</html>

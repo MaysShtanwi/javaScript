@@ -4,31 +4,134 @@
 	<title></title>
 </head>
 <body>
+<input id="uploadImage" type="file" name="photo" />
+<input id="caption" type="text" name="caption" placeholder="caption" />
 
-<input type="file" id="add" accept="image/*"  multiple>
-<button onclick="add()">Add</button>
-<br>
+<label for="blue">Blue</label>
+<input id="color" type="radio" name="color" value="blue" />
 
-<img id="photo" style="width: 500px; height: 900px;"/> 
+<label for="green">Green</label>
+<input id="color" type="radio" name="color" value="green" />
+
+<label for="red">Red</label>
+<input id="color" type="radio" name="color" value="red" />
+
+<canvas id="canvas" width="640" height="480" style="border:1px solid #ccc"></canvas>
+
+<br />
+
+<h5>Preview</h5>
+<a href="#" id="imageData" type="text" target="_blank">
+    <img id="preview" style="width:200px; height: 200px;" />
+</a>
+
+<script type="'text/javascript'">
 	
+var ls = window.localStorage,
+    photo = document.getElementById('uploadImage'),
+    canvas = document.getElementById('canvas'),
+    caption = document.getElementById('caption'),
+    colors = document.getElementsByName('color'),
+    context = canvas.getContext('2d'),
+    fileReader = new FileReader(),
+    img = new Image(), lastImgData = ls.getItem('image'),
+    x, y, 
+    currentText = ls.getItem('text') || "",
+    color = ls.getItem('color') || "black", neww = 0, newh = 0;
 
+if (color) {
+    Array.prototype.forEach.call(colors, function(el) {
+        if (el.value === color) {
+             el.checked = true;   
+        }
+    });
+}
 
+if (currentText) {
+    caption.value = currentText;   
+}
 
-<script type="text/javascript">
-	function add(){
-		
-        var oFReader = new FileReader();
-        oFReader.readAsDataURL(document.getElementById("add").files[0]);
+if (lastImgData) {
+    img.src = lastImgData;   
+}
 
-        oFReader.onload = function (oFREvent) {
-            document.getElementById("photo").src = oFREvent.target.result;
-        };
+fileReader.onload = function (e) {
+    console.log(typeof e.target.result, e.target.result instanceof Blob);
+    img.src = e.target.result;
+};
+
+img.onload = function() {
+    var rw = img.width / canvas.width; // width and height are maximum thumbnail's bounds
+    var rh = img.height / canvas.height;
     
+    if (rw > rh)
+    {
+        newh = Math.round(img.height / rw);
+        neww = canvas.width;
+    }
+    else
+    {
+        neww = Math.round(img.width / rh);
+        newh = canvas.height;
+    }
+    
+    x = (canvas.width - neww) / 2,
+        y = (canvas.height - newh) / 2;
+    
+    drawImage();
+};
 
-	}
+photo.addEventListener('change', function() {
+    var file = this.files[0];  
+    return file && fileReader.readAsDataURL(file); 
+});
 
-</script>
+caption.addEventListener('change', function(event) {
+    currentText = event.target.value;
+    drawImage();
+});
 
+canvas.addEventListener('dragover', function(event) {
+    event.preventDefault();
+});
+
+canvas.addEventListener('drop', function(event) {
+    event.preventDefault();
+    fileReader.readAsDataURL(event.dataTransfer.files[0]);
+});
+
+Array.prototype.forEach.call(colors, function(el) {
+    el.addEventListener('change', function(e) {
+        color = e.target.value;
+        drawImage(currentText);
+    });
+});
+
+
+function drawImage() {
+   var dataUrl;
+    
+    canvas.width = canvas.width;
+   
+   if (img.width) context.drawImage(img, x, y, neww, newh);
+    
+   context.font = 'bold 18pt arial';
+   context.fillStyle = color;
+   context.fillText(currentText, 150, 100);
+    
+   dataUrl = canvas.toDataURL();
+    
+   document.getElementById('imageData').href = dataUrl;
+   document.getElementById('preview').src = dataUrl;
+    
+   ls.setItem('text', currentText);
+   ls.setItem('color', color);
+   ls.setItem('image', img.src);
+}
+
+drawImage();
+
+	</script>
 
 
 
