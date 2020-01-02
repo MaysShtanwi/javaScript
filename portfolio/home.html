@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript " src="jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  	$("document").ready(function(){
+ $(function(){
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $(window).resize(function(e) {
+              if($(window).width()<=768){
+                $("#wrapper").removeClass("toggled");
+              }else{
+                $("#wrapper").addClass("toggled");
+              }
+            });
+          });
+           
+           var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  	});
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body>
+<header>
+	 
+   
+        <nav class="navbar navbar-expand navbar-dark ">
+         <a href="#menu-toggle" id="menu-toggle" class="navbar-brand">
+         	<span class="navbar-toggler-icon"></span></a>
+         	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+       
+        </nav>
+        <div id="wrapper" class="toggled">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav mt-5 pt-5">
+                   
+                    <li> <a href="#"><i class="fas fa-home fa-2x mt-5 mb-4 "></i></a> </li>
+                    <li> <a href="#"><i class="far fa-user fa-2x mt-4 mb-4"></i></a> </li>
+                    <li> <a href="#"><i class="fas fa-cog fa-2x mt-4  mb-4"></i></a> </li>
+                    <li> <a href="#"><i class="far fa-eye fa-2x mt-4  mb-4"></i></a> </li>
+                    <li> <a href="#"><i class="far fa-envelope fa-2x mt-4  mb-4"></i></a> </li>
+                    
+                </ul>
+            </div> <!-- /#sidebar-wrapper -->
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid mt-5 pt-5">
+                    <h1 class="ml6 pt-5 ">
+  <span class="text-wrapper mt-5 ">
+    <span class="letters text-white ">Hi! I'm Mays </span>
+  </span>
+
+    
+ 
+</h1>
+<h1 class="ml6">
+  <span class="text-wrapper mt-5 ">
+    <span class="letters text-white ">I'm Front End Developer </span>
+  </span>
+  
+ 
+</h1>
+ <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            </div> <!-- /#page-content-wrapper -->
+        </div> <!-- /#wrapper -->
+        <!-- Bootstrap core JavaScript -->
+       
+</header>
+<section class="sec1">
+	
+</section>s
+</body>
+</html>
