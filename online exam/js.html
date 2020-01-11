@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css" >
+	
+	<script type="text/javascript">
+
+
+		$(document).ready(function(){
+
+
+			$("#q2").hide();
+			$("#q3").hide();
+			$("#q4").hide();
+			$("#q5").hide();
+			$("#q6").hide();
+			$("#q7").hide();
+			$("#q8").hide();
+			$("#q9").hide();
+			$("#q10").hide();
+			$("#sub").hide();
+
+			$("#nxt1").click(function(){
+				if ($('input:radio[name="question1"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+
+			$("#nxt2").click(function(){
+				if ($('input:radio[name="question2"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").show();
+
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+			$("#nxt3").click(function(){
+				if ($('input:radio[name="question3"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").show();
+
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt4").click(function(){
+				if ($('input:radio[name="question4"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt5").click(function(){
+				if ($('input:radio[name="question5"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt6").click(function(){
+				if ($('input:radio[name="question6"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt7").click(function(){
+				if ($('input:radio[name="question7"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt8").click(function(){
+				if ($('input:radio[name="question8"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").hide();
+					$("#q9").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt9").click(function(){
+				if ($('input:radio[name="question9"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").hide();
+					$("#q9").hide();
+					$("#q10").show();
+					$("#sub").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+
+		});
+
+	</script>
+</head>
+<body class="bright">
+	<div class="container pl-5 ">
+		<form name="frm" onsubmit="return sbmt()" class=" ml-5 frm pb-5">
+
+
+
+
+			<div id="q1" class="qsn p-5 ">
+				<h2>Q1: To insert a JavaScript into an HTML page, which tag is used?</h2><br>
+
+				<input type="radio" value="< script=’java’>" name="question1"  id="op1">
+				<label for="op1"> A. < script=’java’></label>  <br>
+
+
+				<input type="radio" value="< javascript>"name="question1" id="op2">
+
+				<label for="op2">B. < javascript></label><br>
+				
+
+				<input type="radio" value="< script>" name="question1" id="op3">
+
+				<label for="op3">C. < script></label> <br>
+
+				<button id="nxt1" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q2" class="qsn p-5">
+
+				<h2>Q2:  How does Java Script store dates in objects of Date type?</h2><br>
+				
+				<input type="radio" value="he number of days since January 1st, 1900" name="question2" id="op4">
+
+				<label for="op4">A. The number of days since January 1st, 1900</label>  <br>
+				
+				<input type="radio" value="The number of seconds since January 1st, 1970" name="question2" id="op5">
+
+				<label for="op5">B. The number of seconds since January 1st, 1970</label> <br>
+				
+				<input type="radio" value="The number of milliseconds since January 1st, 1970" name="question2" id="op6">
+
+				<label for="op6"> C. The number of milliseconds since January 1st, 1970</label><br>
+				
+				<button id="nxt2" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			
+			<div id="q3" class="qsn p-5"> 
+				
+				<h2>Q3: Which is the correct way to write a JavaScript array?</h2><br>
+				
+				<input type="radio" value="var txt = new Array(1:'arr',2:'kim',3:'jim')" name="question3" id="op7">
+
+				<label for="op7"> A. var txt = new Array(1:"arr",2:"kim",3:"jim")</label><br>
+				
+				<input type="radio" value="var txt = new Array('arr ','kim','jim')" name="question3" id="op8">
+
+				<label for="op8"> B. var txt = new Array("arr ","kim","jim")</label><br>
+				
+				<input type="radio" value="var txt = new Array:1=(' arr ')2=('kim')3=('jim')" name="question3" id="op9">
+
+				<label for="op9">C. var txt = new Array:1=(" arr ")2=("kim")3=("jim")</label><br>
+				
+				<button id="nxt3" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+
+			<div id="q4" class="qsn p-5">
+				
+				<h2>Q4: Which of the following is correct to write “Hello World” on the web page?</h2><br>
+				
+				<input type="radio" value="document.write(“Hello World”)" name="question4" id="op10">
+
+				<label for="op10"> A. document.write(“Hello World”)</label><br>
+				
+				<input type="radio" value="print(“Hello World”)" name="question4" id="op11">
+
+				<label for="op11">B. print(“Hello World”)</label><br>
+				
+				<input type="radio" value="System.out.println(“Hello World”)" name="question4" id="op12">
+
+				<label for="op12">C. System.out.println(“Hello World”)</label><br>
+				
+				<button id="nxt4" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+
+			<div id="q5" class="qsn p-5"> 
+				
+				<h2>Q5: Which attribute needs to be changed to make elements invisible?</h2><br>
+				
+				<input type="radio" value="visibilty" name="question5" id="op13">
+
+				<label for="op13">A. visibilty</label><br>
+				
+				<input type="radio" value="visible" name="question5" id="op14">
+
+				<label for="op14">B. visible</label><br>
+				
+				<input type="radio" value="invisibility" name="question5" id="op15">
+
+				<label for="op15"> C. invisibility</label><br>
+				
+				<button id="nxt5" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q6" class="qsn p-5"> 
+				
+				<h2>Q6: Which of the ways below is incorrect of instantiating a date?</h2><br>
+				
+				<input type="radio" value="new Date(dateString)" name="question6" id="op16">
+
+				<label for="op16"> A. new Date(dateString)</label><br>
+				
+				<input type="radio" value="new Date(seconds)" name="question6" id="op17">
+
+				<label for="op17">B. new Date(seconds)</label><br>
+				
+				<input type="radio" value="new Date()" name="question6" id="op18">
+
+				<label for="op18">C. new Date()</label><br>
+				
+				<button id="nxt6" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q7" class="qsn p-5"> 
+				
+				<h2>Q7:  What language defines the behavior of a web page?</h2><br>
+				
+				<input type="radio" value="HTML" name="question7" id="op19">
+
+				<label for="op19">A. HTML</label><br>
+				
+				<input type="radio" value=" CSS" name="question7" id="op20">
+
+				<label for="op20"> B.  CSS</label><br>
+				
+				<input type="radio" value="Java Script" name="question7" id="op21">
+
+				<label for="op21"> C. Java Script</label><br>
+				
+				<button id="nxt7" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			
+			<div id="q8" class="qsn p-5"> 
+				
+				<h2>Q8: HTML program is saved using _________ extension.</h2><br>
+				
+				<input type="radio" value=".htl" name="question8" id="op22">
+
+				<label for="op22">A. .htl</label><br>
+				
+				<input type="radio" value=".html" name="question8" id="op23">
+
+				<label for="op23">B. .html</label><br>
+				
+				<input type="radio" value=".hml" name="question8" id="op24">
+
+				<label for="op24"> C. .hml</label><br>
+				
+				<button id="nxt8" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q9" class="qsn p-5"> 
+				<h2>Q9:  How to append a value to an array of Java Script?</h2><br>
+				
+				<input type="radio" value="arr[arr.length] = value" name="question9" id="op25">
+
+				<label for="op25"> A. arr[arr.length] = value</label><br>
+				
+				<input type="radio" value="arr[arr.length-1] = value" name="question9" id="op26">
+
+				<label for="op26">B. arr[arr.length-1] = value</label><br>
+				
+				<input type="radio" value="arr[arr.length+1] = new Arrays()" name="question9" id="op27">
+
+				<label for="op27">C. arr[arr.length+1] = new Arrays()</label><br>
+				
+				<button id="nxt9" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q10" class="qsn p-5"> 
+				
+				<h2>Q10: What is negative infinity in Java script?</h2><br>
+				
+				<input type="radio" value="Any of below" name="question10" id="op28">
+
+				<label for="op28">A. Any of below</label><br>
+				
+				<input type="radio" value="number in JavaScript, derived by dividing negative number by zero" name="question10" id="op29">
+
+				<label for="op29">B. number in JavaScript, derived by dividing negative number by zero</label><br>
+				
+				<input type="radio" value="number in JavaScript, derived by dividing number by zero." name="question10" id="op30">
+
+				<label for="op30"> C. number in JavaScript, derived by dividing number by zero.</label><br>
+				<input type="submit" value="submit " id="sub" class="nxt btn-lg mt-5 ">
+			</div>
+			
+		</form> 
+	</div>
+	<script>
+		
+
+		function sbmt(){
+			var form = document.frm;
+
+			localStorage.setItem("question1", "< script>");
+
+			localStorage.setItem("question2", "The number of milliseconds since January 1st, 1970");
+
+
+			localStorage.setItem("question3", "var txt = new Array('arr ','kim','jim')");
+
+			localStorage.setItem("question4", "document.write(“Hello World”)");
+			localStorage.setItem("question5", "visibilty");
+
+			localStorage.setItem("question6", "new Date(seconds)");
+
+			localStorage.setItem("question7", "Java Script");
+
+
+			localStorage.setItem("question8", ".html");
+
+			localStorage.setItem("question9", "arr[arr.length] = value");
+			localStorage.setItem("question10", "number in JavaScript, derived by dividing negative number by zero");
+
+
+
+
+
+
+			var Q1 = form.elements["question1"].value;
+			var Q2 = form.elements["question2"].value;
+			var Q3 = form.elements["question3"].value;
+			var Q4 = form.elements["question4"].value;
+			var Q5 = form.elements["question5"].value;
+			var Q6 = form.elements["question6"].value;
+			var Q7 = form.elements["question7"].value;
+			var Q8 = form.elements["question8"].value;
+			var Q9 = form.elements["question9"].value;
+			var Q10 = form.elements["question10"].value;
+			var score=0;
+			localStorage.setItem("answer1", Q1);
+			localStorage.setItem("answer2", Q2);
+			localStorage.setItem("answer3", Q3);
+			localStorage.setItem("answer4", Q4);
+			localStorage.setItem("answer5", Q5);
+			localStorage.setItem("answer6", Q6);
+			localStorage.setItem("answer7", Q7);
+			localStorage.setItem("answer8", Q8);
+			localStorage.setItem("answer9", Q9);
+			localStorage.setItem("answer10", Q10);
+			
+
+			if(Q1 == "< script>"){
+				score+=10;
+
+			}
+
+			if(Q2 == "Starting Tag"){
+				score+=10;
+			}
+
+			if(Q3 == "var txt = new Array('arr ','kim','jim')"){
+				score+=10;
+			}
+
+			if(Q4 == "document.write(“Hello World”)"){
+				score+=10;
+			}
+
+
+			if(Q5 == "visibilty"){
+				score+=10;
+			}
+
+			if(Q6 == "new Date(seconds)"){
+				score+=10;
+			}
+
+			if(Q7 == "Java Script"){
+				score+=10;
+			}
+
+			if(Q8 == ".html"){
+				score+=10;
+			}
+
+			if(Q9 == "arr[arr.length] = value"){
+				score+=10;
+			}
+			if(Q10 == "number in JavaScript, derived by dividing negative number by zero"){
+				score+=10;
+			}
+
+
+
+			localStorage.setItem("result", score);
+			
+			if(confirm("Are you sure you want to submit your answers?")){
+				window.location.href="result.html";
+				return false;
+			}else{
+				return false;
+			}
+
+
+
+		}
+	</script>
+
+</body>
+</html>

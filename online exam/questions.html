@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css" >
+	
+	<script type="text/javascript">
+
+
+		$(document).ready(function(){
+
+
+			$("#q2").hide();
+			$("#q3").hide();
+			$("#q4").hide();
+			$("#q5").hide();
+			$("#q6").hide();
+			$("#q7").hide();
+			$("#q8").hide();
+			$("#q9").hide();
+			$("#q10").hide();
+			$("#sub").hide();
+
+			$("#nxt1").click(function(){
+				if ($('input:radio[name="question1"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+
+			$("#nxt2").click(function(){
+				if ($('input:radio[name="question2"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").show();
+
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+			$("#nxt3").click(function(){
+				if ($('input:radio[name="question3"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").show();
+
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt4").click(function(){
+				if ($('input:radio[name="question4"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt5").click(function(){
+				if ($('input:radio[name="question5"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt6").click(function(){
+				if ($('input:radio[name="question6"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt7").click(function(){
+				if ($('input:radio[name="question7"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt8").click(function(){
+				if ($('input:radio[name="question8"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").hide();
+					$("#q9").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt9").click(function(){
+				if ($('input:radio[name="question9"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").hide();
+					$("#q9").hide();
+					$("#q10").show();
+					$("#sub").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+
+		});
+
+	</script>
+</head>
+<body class="bright">
+	<div class="container pl-5 ">
+		<form name="frm" onsubmit="return sbmt()" class=" ml-5 frm pb-5">
+
+
+
+
+			<div id="q1" class="qsn p-5 ">
+				<h2>Q1: What is the difference between XML and HTML?</h2><br>
+
+				<input type="radio" value="HTML is used for exchanging data, XML is not" name="question1"  id="op1">
+				<label for="op1">A. HTML is used for exchanging data, XML is not.</label>  <br>
+
+
+				<input type="radio" value="XML is used for exchanging data, HTML is not"name="question1" id="op2">
+
+				<label for="op2">B. XML is used for exchanging data, HTML is not</label><br>
+				
+
+				<input type="radio" value="HTML can have user defined tags, XML cannot" name="question1" id="op3">
+
+				<label for="op3"> C. HTML can have user defined tags, XML cannot</label> <br>
+
+				<button id="nxt1" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q2" class="qsn p-5 ">
+
+				<h2>Q2: Opening Tag of HTML Tag is called as ________.</h2><br>
+				
+				<input type="radio" value="Closed Tag" name="question2" id="op4">
+
+				<label for="op4">A. Closed Tag</label>  <br>
+				
+				<input type="radio" value="Starting Tag" name="question2" id="op5">
+
+				<label for="op5">B. Starting Tag</label> <br>
+				
+				<input type="radio" value="Forward Tag" name="question2" id="op6">
+
+				<label for="op6">C. Forward Tag</label><br>
+				
+				<button id="nxt2" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			
+			<div id="q3" class="qsn p-5 "> 
+				
+				<h2>Q3: Which of the following is used increase the col width?</h2><br>
+				
+				<input type="radio" value="Cellspacing" name="question3" id="op7">
+
+				<label for="op7">A. Cellspacing</label><br>
+				
+				<input type="radio" value="Cellpadding" name="question3" id="op8">
+
+				<label for="op8">B. Cellpadding</label><br>
+				
+				<input type="radio" value="Col span" name="question3" id="op9">
+
+				<label for="op9">C. Col span</label><br>
+				
+				<button id="nxt3" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+
+			<div id="q4" class="qsn p-5">
+				
+				<h2>Q4: The href attribute in the link tag specifies the:</h2><br>
+				
+				<input type="radio" value="Destination of a link" name="question4" id="op10">
+
+				<label for="op10">A. Destination of a link.</label><br>
+				
+				<input type="radio" value="Link" name="question4" id="op11">
+
+				<label for="op11">B. Link</label><br>
+				
+				<input type="radio" value="Hypertext" name="question4" id="op12">
+
+				<label for="op12">C. Hypertext</label><br>
+				
+				<button id="nxt4" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+
+			<div id="q5" class="qsn p-5"> 
+				
+				<h2>Q5: What are <'div'> tags used for?</h2><br>
+				
+				<input type="radio" value="To replace paragraphs. i.e. p tags" name="question5" id="op13">
+
+				<label for="op13">A. To replace paragraphs. i.e. p tags</label><br>
+				
+				<input type="radio" value="To logically divide the document" name="question5" id="op14">
+
+				<label for="op14">B. To logically divide the document</label><br>
+				
+				<input type="radio" value="To provide space between tables" name="question5" id="op15">
+
+				<label for="op15"> C. To provide space between tables</label><br>
+				
+				<button id="nxt5" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q6" class="qsn p-5"> 
+				
+				<h2>Q6: How can we resize the image?</h2><br>
+				
+				<input type="radio" value="Using resize attribute" name="question6" id="op16">
+
+				<label for="op16"> A. Using resize attribute</label><br>
+				
+				<input type="radio" value="Using height and width" name="question6" id="op17">
+
+				<label for="op17">B. Using height and width</label><br>
+				
+				<input type="radio" value="Using size attribute" name="question6" id="op18">
+
+				<label for="op18">C. Using size attribute</label><br>
+				
+				<button id="nxt6" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q7" class="qsn p-5"> 
+				
+				<h2>Q7: Which of the following is valid colour code ?</h2><br>
+				
+				<input type="radio" value="#000000" name="question7" id="op19">
+
+				<label for="op19">A. #000000;</label><br>
+				
+				<input type="radio" value="#0000000" name="question7" id="op20">
+
+				<label for="op20"> B. #0000000;</label><br>
+				
+				<input type="radio" value="#000" name="question7" id="op21">
+
+				<label for="op21"> C. #000;</label><br>
+				
+				<button id="nxt7" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			
+			<div id="q8" class="qsn p-5"> 
+				
+				<h2>Q8: HTML program is saved using _________ extension.</h2><br>
+				
+				<input type="radio" value=".htl" name="question8" id="op22">
+
+				<label for="op22">A. .htl</label><br>
+				
+				<input type="radio" value=".html" name="question8" id="op23">
+
+				<label for="op23">B. .html</label><br>
+				
+				<input type="radio" value=".hml" name="question8" id="op24">
+
+				<label for="op24"> C. .hml</label><br>
+				
+				<button id="nxt8" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q9" class="qsn p-5"> 
+				<h2>Q9:  Caption Tag in HTML ?</h2><br>
+				
+				<input type="radio" value="Is used to display the Title for table at the top" name="question9" id="op25">
+
+				<label for="op25"> A. Is used to display the Title for table at the top</label><br>
+				
+				<input type="radio" value="Is used to display the Title for table at the bottom" name="question9" id="op26">
+
+				<label for="op26">B. Is used to display the Title for table at the bottom</label><br>
+				
+				<input type="radio" value="Both" name="question9" id="op27">
+
+				<label for="op27">C. Both</label><br>
+				
+				<button id="nxt9" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q10" class="qsn p-5"> 
+				
+				<h2>Q10: Which of the following is used increase the row height?</h2><br>
+				
+				<input type="radio" value="Cellspacing" name="question10" id="op28">
+
+				<label for="op28">A. Cellspacing</label><br>
+				
+				<input type="radio" value="Cellpadding" name="question10" id="op29">
+
+				<label for="op29">B. Cellpadding</label><br>
+				
+				<input type="radio" value="Row span" name="question10" id="op30">
+
+				<label for="op30"> C. Row span</label><br>
+				<input type="submit" value="submit " id="sub" class="nxt btn-lg mt-5 ">
+			</div>
+			
+		</form> 
+	</div>
+	<script>
+		
+
+		function sbmt(){
+			var form = document.frm;
+
+			localStorage.setItem("question1", "XML is used for exchanging data, HTML is not");
+
+			localStorage.setItem("question2", "Starting Tag");
+
+
+			localStorage.setItem("question3", "Col span");
+
+			localStorage.setItem("question4", "Destination of a link");
+			localStorage.setItem("question5", "To logically divide the document");
+
+			localStorage.setItem("question6", "Using height and width");
+
+			localStorage.setItem("question7", "#000000");
+
+
+			localStorage.setItem("question8", ".html");
+
+			localStorage.setItem("question9", "Both");
+			localStorage.setItem("question10", "Row span");
+
+
+
+
+
+
+			var Q1 = form.elements["question1"].value;
+			var Q2 = form.elements["question2"].value;
+			var Q3 = form.elements["question3"].value;
+			var Q4 = form.elements["question4"].value;
+			var Q5 = form.elements["question5"].value;
+			var Q6 = form.elements["question6"].value;
+			var Q7 = form.elements["question7"].value;
+			var Q8 = form.elements["question8"].value;
+			var Q9 = form.elements["question9"].value;
+			var Q10 = form.elements["question10"].value;
+			var score=0;
+			localStorage.setItem("answer1", Q1);
+			localStorage.setItem("answer2", Q2);
+			localStorage.setItem("answer3", Q3);
+			localStorage.setItem("answer4", Q4);
+			localStorage.setItem("answer5", Q5);
+			localStorage.setItem("answer6", Q6);
+			localStorage.setItem("answer7", Q7);
+			localStorage.setItem("answer8", Q8);
+			localStorage.setItem("answer9", Q9);
+			localStorage.setItem("answer10", Q10);
+			
+
+			if(Q1 == "XML is used for exchanging data, HTML is not"){
+				score+=10;
+
+			}
+
+			if(Q2 == "Starting Tag"){
+				score+=10;
+			}
+
+			if(Q3 == "Col span"){
+				score+=10;
+			}
+
+			if(Q4 == "Destination of a link"){
+				score+=10;
+			}
+
+
+			if(Q5 == "To logically divide the document"){
+				score+=10;
+			}
+
+			if(Q6 == "Using height and width"){
+				score+=10;
+			}
+
+			if(Q7 == "#000000"){
+				score+=10;
+			}
+
+			if(Q8 == ".html"){
+				score+=10;
+			}
+
+			if(Q9 == "Both"){
+				score+=10;
+			}
+			if(Q10 == "Row span"){
+				score+=10;
+			}
+
+
+
+			localStorage.setItem("result", score);
+			
+			if(confirm("Are you sure you want to submit your answers?")){
+				window.location.href="result.html";
+				return false;
+			}else{
+				return false;
+			}
+
+
+
+		}
+	</script>
+
+</body>
+</html>

@@ -7,31 +7,44 @@
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
 </head>
 <body >
-<div class="container login-container">
+<div class="container login-container ">
             <div class="row">
                 <div class="col-md-6 login-form-1">
                   
                     
                 </div>
-                <div class="col-md-6 login-form-2 text-center text-white">
+                <div class="col-md-6 login-form-2 text-center ">
                     
-                    <h1 >Front End Exam</h1>
-                        <h6 >Assess your Front End aptitude</h6>
-                        <p class="text-justify mt-5">The exam comprises two sections worth a total of 100 points:
+                    <h1 class=" display-4">Front End Exam</h1>
+                        
+                        <p class="text-justify  ">The exam comprises three sections worth a total of 30 points:
 
-Section 1 – Multiple Choice (40 points)
+<br><br>Section 1 – HTML Multiple Choice (100 points)
 
-Section 2 – Written Answer (60 points)</p>
-<p class="text-justify mt-5">The Multiple Choice section consists of a series of questions worth 1 point each. Five choices (A to E) are presented with one of them being the correct answer. This section assesses your knowledge of basic to advanced JavaScript concepts.
+<br>Section 2 – CSS  Multiple Choice (100 points)
+<br>Section 3 – JavaScript  Multiple Choice (100 points)
+</p>
+<p class="text-justify mt-5">The Multiple Choice section consists of a series of questions worth 10 points each. Three choices are presented with one of them being the correct answer. Each section assesses your knowledge of basic to advanced Front End concepts.
 
 </p>
                         <div class="form-group mt-5">
-                            <input type="submit" class="btnSubmit" value="Start Exam" />
+                            <button  class="glow-on-hover" onclick="strt()"> Start Exam</button>
                         </div>
-                     
-                    </form>
+               
                 </div>
             </div>
         </div>
+
+<script type="text/javascript">
+    function strt(){
+
+setTimeout(function() {
+  //your code to be executed after 1 second
+  window.location.href='sections.html';}, 2000);
+      
+    }
+
+
+</script>
 </body>
 </html>

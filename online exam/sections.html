@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/section.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+<script type="text/javascript" src="jquery.js"></script>
+ <style type="text/css">
+
+ </style>
+ <script type="text/javascript">
+   // Created for an Articles on:
+// https://www.html5andbeyond.com/bubbling-text-effect-no-canvas-required/
+
+jQuery(document).ready(function($){
+ 
+    // Define a blank array for the effect positions. This will be populated based on width of the title.
+    var bArray = [];
+    // Define a size array, this will be used to vary bubble sizes
+    var sArray = [4,6,8,10];
+ 
+    // Push the header width values to bArray
+    for (var i = 0; i < $('.bubbles').width(); i++) {
+        bArray.push(i);
+    }
+     
+    // Function to select random array element
+    // Used within the setInterval a few times
+    function randomValue(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+ 
+    // setInterval function used to create new bubble every 350 milliseconds
+    setInterval(function(){
+         
+        // Get a random size, defined as variable so it can be used for both width and height
+        var size = randomValue(sArray);
+        // New bubble appeneded to div with it's size and left position being set inline
+        // Left value is set through getting a random value from bArray
+        $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+         
+        // Animate each bubble to the top (bottom 100%) and reduce opacity as it moves
+        // Callback function used to remove finsihed animations from the page
+        $('.individual-bubble').animate({
+            'bottom': '100%',
+            'opacity' : '-=0.7'
+        }, 3000, function(){
+            $(this).remove()
+        }
+        );
+ 
+ 
+    }, 350);
+ 
+});
+
+
+function html(){
+  window.location.href='questions.html';
+}
+
+function css(){
+  window.location.href='css.html';
+}
+
+function js(){
+  window.location.href='js.html';
+}
+
+ </script>
+
+</head>
+<body>
+
+    <div class="container-fluid pt-5 pb-5 sec">
+        
+<div class="container group ">
+  <div class="grid-1-3" onclick="html()">
+    <img src="img/html.png" class="img-fluid rounded-circle mt-5">
+   <div class="center-outer">
+<div class="center-inner">
+
+<div class="bubbles">
+<h1>HTML</h1>
+</div>
+
+</div>
+</div>
+    
+  </div>
+
+
+
+  <div class="grid-1-3" onclick="css()">
+     <img src="img/css.png" class="img-fluid rounded-circle">
+      <div class="center-outer">
+<div class="center-inner">
+
+<div class="bubbles">
+<h1>CSS</h1>
+</div>
+
+</div>
+</div>
+</div>
+<div class="grid-1-3" onclick="js()">
+   <img src="img/js.png" class="img-fluid rounded-circle mt-5">
+      <div class="center-outer">
+<div class="center-inner">
+
+<div class="bubbles">
+<h1>JAVASCRIPT</h1>
+</div>
+
+</div>
+</div>
+</div>
+
+
+    </div>
+
+</body>
+</html>
+

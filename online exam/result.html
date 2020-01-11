@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+  
+</head>
+<body>
+	<div class="container p-5 mt-5 mb-5">
+
+	<h1 id="show" class="text-center"></h1>
+	<table class="table  rounded text-center">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Correct Answer</th>
+      <th scope="col">Your Answer</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td ><button id="c1" class="mark"></button></td>
+      <td ><button id="a1" class="mark"></button></td>
+   
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+     <td ><button id="c2" class="mark "></button></td>
+      <td ><button id="a2" class="mark "></button></td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+     <td ><button id="c3" class="mark "></button></td>
+      <td ><button id="a3" class="mark "></button></td>
+   
+ 
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td ><button id="c4" class="mark "></button></td>
+      <td ><button id="a4" class="mark "></button></td>
+   
+ 
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td ><button id="c5" class="mark "></button></td>
+      <td ><button id="a5" class="mark "></button></td>
+   
+ 
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+     <td ><button id="c6" class="mark "></button></td>
+      <td ><button id="a6" class="mark "></button></td>
+   
+ 
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+    <td ><button id="c7" class="mark"></button></td>
+      <td ><button id="a7" class="mark"></button></td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+     <td ><button id="c8" class="mark "></button></td>
+      <td ><button id="a8" class="mark "></button></td>
+   
+ 
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+     <td ><button id="c9" class="mark "></button></td>
+      <td ><button id="a9" class="mark "></button></td>
+   
+ 
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td ><button id="c10" class="mark "></button></td>
+      <td ><button id="a10" class="mark "></button></td>
+   
+ 
+    </tr>
+  </tbody>
+</table>
+    <button class="btn btn-login float-right" onclick="back()">Go Back</button>
+
+</div>
+<script type="text/javascript">
+	/*document.cookie="username=Mays Shatnawi,age=23";
+	var v = document.cookie.split(',');
+	alert(v[1]);
+	alert(v[0]);*/
+
+		var q1 = localStorage.getItem("question1");
+		var q2 = localStorage.getItem("question2");
+		var q3 = localStorage.getItem("question3");
+		var q4 = localStorage.getItem("question4");
+		var q5 = localStorage.getItem("question5");
+		var q6 = localStorage.getItem("question6");
+		var q7 = localStorage.getItem("question7");
+		var q8 = localStorage.getItem("question8");
+		var q9 = localStorage.getItem("question9");
+		var q10 = localStorage.getItem("question10");
+		var ans4 = localStorage.getItem("answer4");
+		var ans3 = localStorage.getItem("answer3");
+		var ans1 = localStorage.getItem("answer1");	
+		var ans2 = localStorage.getItem("answer2");
+		var ans5 = localStorage.getItem("answer5");
+		var ans6 = localStorage.getItem("answer6");
+		var ans7 = localStorage.getItem("answer7");
+		var ans8 = localStorage.getItem("answer8");
+		var ans9 = localStorage.getItem("answer9");
+		var ans10 = localStorage.getItem("answer10");
+		var score=localStorage.getItem('result');
+
+document.getElementById('show').innerHTML='You scored : '+score+ ' out of 100';
+	
+			document.getElementById('a1').innerHTML=ans1;
+			document.getElementById('a2').innerHTML=ans2;
+			document.getElementById('a3').innerHTML=ans3;
+			document.getElementById('a4').innerHTML=ans4;
+			document.getElementById('a5').innerHTML=ans5;
+			document.getElementById('a6').innerHTML=ans6;
+			document.getElementById('a7').innerHTML=ans7;
+			document.getElementById('a8').innerHTML=ans8;
+			document.getElementById('a9').innerHTML=ans9;
+			document.getElementById('a10').innerHTML=ans10;
+
+			document.getElementById('c1').innerHTML=q1;
+			document.getElementById('c2').innerHTML=q2;
+			document.getElementById('c3').innerHTML=q3;
+			document.getElementById('c4').innerHTML=q4;
+			document.getElementById('c5').innerHTML=q5;
+			document.getElementById('c6').innerHTML=q6;
+			document.getElementById('c7').innerHTML=q7;
+			document.getElementById('c8').innerHTML=q8;
+			document.getElementById('c9').innerHTML=q9;
+			document.getElementById('c10').innerHTML=q10;
+
+
+
+function back(){
+  window.location.href='sections.html';
+    localStorage.removeItem("question1");
+    localStorage.removeItem("question2");
+    localStorage.removeItem("question3");
+    localStorage.removeItem("question4");
+    localStorage.removeItem("question5");
+    localStorage.removeItem("question6");
+    localStorage.removeItem("question7");
+    localStorage.removeItem("question8");
+    localStorage.removeItem("question9");
+    localStorage.removeItem("question10");
+    localStorage.removeItem("answer4");
+    localStorage.removeItem("answer3");
+    localStorage.removeItem("answer1"); 
+    localStorage.removeItem("answer2");
+    localStorage.removeItem("answer5");
+    localStorage.removeItem("answer6");
+    localStorage.removeItem("answer7");
+    localStorage.removeItem("answer8");
+    localStorage.removeItem("answer9");
+    localStorage.removeItem("answer10");
+    localStorage.removeItem('result');
+
+  
+	
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css" >
+	
+	<script type="text/javascript">
+
+
+		$(document).ready(function(){
+
+
+			$("#q2").hide();
+			$("#q3").hide();
+			$("#q4").hide();
+			$("#q5").hide();
+			$("#q6").hide();
+			$("#q7").hide();
+			$("#q8").hide();
+			$("#q9").hide();
+			$("#q10").hide();
+			$("#sub").hide();
+
+			$("#nxt1").click(function(){
+				if ($('input:radio[name="question1"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+
+			$("#nxt2").click(function(){
+				if ($('input:radio[name="question2"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").show();
+
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+			$("#nxt3").click(function(){
+				if ($('input:radio[name="question3"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").show();
+
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt4").click(function(){
+				if ($('input:radio[name="question4"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt5").click(function(){
+				if ($('input:radio[name="question5"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt6").click(function(){
+				if ($('input:radio[name="question6"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt7").click(function(){
+				if ($('input:radio[name="question7"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt8").click(function(){
+				if ($('input:radio[name="question8"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").hide();
+					$("#q9").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+			$("#nxt9").click(function(){
+				if ($('input:radio[name="question9"]:checked').length > 0) {
+					$("#q1").hide();
+					$("#q2").hide();
+					$("#q3").hide();
+					$("#q4").hide();
+					$("#q5").hide();
+					$("#q6").hide();
+					$("#q7").hide();
+					$("#q8").hide();
+					$("#q9").hide();
+					$("#q10").show();
+					$("#sub").show();
+
+				} else {
+					e.preventDefault();
+				}
+
+			});
+
+
+
+		});
+
+	</script>
+</head>
+<body class="bright">
+	<div class="container pl-5 ">
+		<form name="frm" onsubmit="return sbmt()" class=" ml-5 frm pb-5">
+
+
+
+
+			<div id="q1" class="qsn p-5 ">
+				<h2>Q1: How can you created rounded corners using CSS3?</h2><br>
+
+				<input type="radio" value="border[round]: 30px;" name="question1"  id="op1">
+				<label for="op1">A. border[round]: 30px;</label>  <br>
+
+
+				<input type="radio" value="corner-effect: round;"name="question1" id="op2">
+
+				<label for="op2"> B. corner-effect: round;</label><br>
+				
+
+				<input type="radio" value="border-radius: 30px;" name="question1" id="op3">
+
+				<label for="op3"> C. border-radius: 30px;</label> <br>
+
+				<button id="nxt1" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q2" class="qsn p-5">
+
+				<h2>Q2:  How do you add shadow to elements in CSS3?</h2><br>
+				
+				<input type="radio" value="box-shadow: 10px 10px 5px grey;" name="question2" id="op4">
+
+				<label for="op4">A. box-shadow: 10px 10px 5px grey;</label>  <br>
+				
+				<input type="radio" value="shadow-right: 10px shadow-bottom: 10px;" name="question2" id="op5">
+
+				<label for="op5"> B. shadow-right: 10px shadow-bottom: 10px;</label> <br>
+				
+				<input type="radio" value="shadow-color: grey;" name="question2" id="op6">
+
+				<label for="op6"> C. shadow-color: grey;</label><br>
+				
+				<button id="nxt2" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			
+			<div id="q3" class="qsn p-5"> 
+				
+				<h2>Q3: How to you modify a border image using CSS3?</h2><br>
+				
+				<input type="radio" value="border: url(image.png);" name="question3" id="op7">
+
+				<label for="op7">A. border: url(image.png);</label><br>
+				
+				<input type="radio" value="border-variable: image url(image.png);" name="question3" id="op8">
+
+				<label for="op8">B. border-variable: image url(image.png);</label><br>
+				
+				<input type="radio" value="border-image: url(border.png) 30 30 round;" name="question3" id="op9">
+
+				<label for="op9">C. border-image: url(border.png) 30 30 round;</label><br>
+				
+				<button id="nxt3" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+
+			<div id="q4" class="qsn p-5">
+				
+				<h2>Q4: How to resize a background image using CSS3?</h2><br>
+				
+				<input type="radio" value="background-size: 80px 60px;" name="question4" id="op10">
+
+				<label for="op10"> A. background-size: 80px 60px;</label><br>
+				
+				<input type="radio" value="bg-dimensions: 80px 60px;" name="question4" id="op11">
+
+				<label for="op11">B. bg-dimensions: 80px 60px;</label><br>
+				
+				<input type="radio" value="background-proportion: 80px 60px;" name="question4" id="op12">
+
+				<label for="op12">C. background-proportion: 80px 60px;</label><br>
+				
+				<button id="nxt4" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+
+			<div id="q5" class="qsn p-5"> 
+				
+				<h2>Q5: How to add text shadow using CSS3?</h2><br>
+				
+				<input type="radio" value="font: shadowed 5px 5px 5px grey;" name="question5" id="op13">
+
+				<label for="op13"> A. font: shadowed 5px 5px 5px grey;</label><br>
+				
+				<input type="radio" value="font-shadow: 5px 5px 5px grey;" name="question5" id="op14">
+
+				<label for="op14">B. font-shadow: 5px 5px 5px grey;</label><br>
+				
+				<input type="radio" value="text-shadow: 5px 5px 5px grey;" name="question5" id="op15">
+
+				<label for="op15"> C. text-shadow: 5px 5px 5px grey;</label><br>
+				
+				<button id="nxt5" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q6" class="qsn p-5"> 
+				
+				<h2>Q6:  How to re-size/scale objects using CSS3?</h2><br>
+				
+				<input type="radio" value="transform: scale(2,4);" name="question6" id="op16">
+
+				<label for="op16">A. transform: scale(2,4);</label><br>
+				
+				<input type="radio" value="scale-object: 2,4;" name="question6" id="op17">
+
+				<label for="op17">B. scale-object: 2,4;</label><br>
+				
+				<input type="radio" value="None" name="question6" id="op18">
+
+				<label for="op18">C. None</label><br>
+				
+				<button id="nxt6" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q7" class="qsn p-5"> 
+				
+				<h2>Q7: How to create transition effects using CSS3?</h2><br>
+				
+				<input type="radio" value="transition: width 2s;" name="question7" id="op19">
+
+				<label for="op19">A. transition: width 2s;</label><br>
+				
+				<input type="radio" value="transition-duration: 2s; transition-effect: width" name="question7" id="op20">
+
+				<label for="op20">B. transition-duration: 2s; transition-effect: width;</label><br>
+				
+				<input type="radio" value="alpha-effect: transition (width,2s);" name="question7" id="op21">
+
+				<label for="op21">C. alpha-effect: transition (width,2s);</label><br>
+				
+				<button id="nxt7" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			
+			<div id="q8" class="qsn p-5"> 
+				
+				<h2>Q8:  __________ is a property that allows developers to add rounded corners on the design elements.</h2><br>
+				
+				<input type="radio" value="Corner" name="question8" id="op22">
+
+				<label for="op22"> A. Corner</label><br>
+				
+				<input type="radio" value="Box Shadow" name="question8" id="op23">
+
+				<label for="op23">B. Box Shadow</label><br>
+				
+				<input type="radio" value="Border-Radius" name="question8" id="op24">
+
+				<label for="op24">C. Border-Radius</label><br>
+				
+				<button id="nxt8" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q9" class="qsn p-5"> 
+				<h2>Q9:  If you put a value of 0 for a Border-Radius what will happen?.</h2><br>
+				
+				<input type="radio" value="The Corner will curve horizontal." name="question9" id="op25">
+
+				<label for="op25"> A. The Corner will curve horizontal.</label><br>
+				
+				<input type="radio" value="The Corner will be square." name="question9" id="op26">
+
+				<label for="op26">B. The Corner will be square.</label><br>
+				
+				<input type="radio" value="The Corner will curve vertical." name="question9" id="op27">
+
+				<label for="op27">C. The Corner will curve vertical.</label><br>
+				
+				<button id="nxt9" class="nxt btn-lg mt-5 " type="button">Next</button>
+			</div>
+			<div id="q10" class="qsn p-5"> 
+				
+				<h2>Q10:  What are the first three values of text-shadow in order?</h2><br>
+				
+				<input type="radio" value="vertical, blur, horizontal" name="question10" id="op28">
+
+				<label for="op28"> A. vertical, blur, horizontal</label><br>
+				
+				<input type="radio" value="blur, vertical, horizontal" name="question10" id="op29">
+
+				<label for="op29">B. blur, vertical, horizontal</label><br>
+				
+				<input type="radio" value="horizontal, vertical, blur" name="question10" id="op30">
+
+				<label for="op30"> C. horizontal, vertical, blur</label><br>
+				<input type="submit" value="submit " id="sub" class="nxt btn-lg mt-5 ">
+			</div>
+			
+		</form> 
+	</div>
+	<script>
+		
+
+		function sbmt(){
+			var form = document.frm;
+
+			localStorage.setItem("question1", "border-radius: 30px;");
+
+			localStorage.setItem("question2", "box-shadow: 10px 10px 5px grey;");
+
+
+			localStorage.setItem("question3", "border-image: url(border.png) 30 30 round;");
+
+			localStorage.setItem("question4", "background-size: 80px 60px;");
+			localStorage.setItem("question5", "text-shadow: 5px 5px 5px grey;");
+
+			localStorage.setItem("question6", "transform: scale(2,4);");
+
+			localStorage.setItem("question7", "transition: width 2s;");
+
+
+			localStorage.setItem("question8", "Border-Radius");
+
+			localStorage.setItem("question9", "The Corner will be square.");
+			localStorage.setItem("question10", "horizontal, vertical, blur");
+
+
+
+
+
+
+			var Q1 = form.elements["question1"].value;
+			var Q2 = form.elements["question2"].value;
+			var Q3 = form.elements["question3"].value;
+			var Q4 = form.elements["question4"].value;
+			var Q5 = form.elements["question5"].value;
+			var Q6 = form.elements["question6"].value;
+			var Q7 = form.elements["question7"].value;
+			var Q8 = form.elements["question8"].value;
+			var Q9 = form.elements["question9"].value;
+			var Q10 = form.elements["question10"].value;
+			var score=0;
+			localStorage.setItem("answer1", Q1);
+			localStorage.setItem("answer2", Q2);
+			localStorage.setItem("answer3", Q3);
+			localStorage.setItem("answer4", Q4);
+			localStorage.setItem("answer5", Q5);
+			localStorage.setItem("answer6", Q6);
+			localStorage.setItem("answer7", Q7);
+			localStorage.setItem("answer8", Q8);
+			localStorage.setItem("answer9", Q9);
+			localStorage.setItem("answer10", Q10);
+			
+
+			if(Q1 == "border-radius: 30px;"){
+				score+=10;
+
+			}
+
+			if(Q2 == "box-shadow: 10px 10px 5px grey;"){
+				score+=10;
+			}
+
+			if(Q3 == "border-image: url(border.png) 30 30 round;"){
+				score+=10;
+			}
+
+			if(Q4 == "background-size: 80px 60px;"){
+				score+=10;
+			}
+
+
+			if(Q5 == "text-shadow: 5px 5px 5px grey;"){
+				score+=10;
+			}
+
+			if(Q6 == "transform: scale(2,4);"){
+				score+=10;
+			}
+
+			if(Q7 == "transition: width 2s;"){
+				score+=10;
+			}
+
+			if(Q8 == "Border-Radius"){
+				score+=10;
+			}
+
+			if(Q9 == "The Corner will be square."){
+				score+=10;
+			}
+			if(Q10 == "horizontal, vertical, blur"){
+				score+=10;
+			}
+
+
+
+			localStorage.setItem("result", score);
+			
+			if(confirm("Are you sure you want to submit your answers?")){
+				window.location.href="result.html";
+				return false;
+			}else{
+				return false;
+			}
+
+
+
+		}
+	</script>
+
+</body>
+</html>

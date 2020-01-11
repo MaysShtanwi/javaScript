@@ -1,0 +1,211 @@
+@import "compass/css3";
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+background-image:linear-gradient(to top,#f9f2ec,#4d0000,#f9f2ec);
+
+
+  @include filter-gradient(#53455b, #201e22, horizontal);
+  @include background-image(radial-gradient(circle at top,  rgba(83,69,91,1) 0,rgba(32,30,34,1) 70%));
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 2.5em 0;
+}
+.container {
+
+
+display: flex;
+
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1-3 {
+  background-color: white;
+  border: 2px solid #5d4e65;   
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  width: 600px;
+  border-radius: 20px;
+
+
+color: maroon;
+  
+  @media screen and (min-width: 700px) {
+    & {
+      float: left;
+      width: 50%;
+    }
+    &:nth-child(odd) {
+      clear: left;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    & {      
+      width: 33.3333333%;
+    }
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+    &:nth-child(odd) {
+      clear: none;
+    }    
+  }
+  
+  @media screen and (min-width: 1120px) {
+    & {
+       width: 20%;
+    }
+    &:nth-child(odd), &:nth-child(3n+1) {
+       clear: none;
+    }    
+  }
+  
+}
+.grid-1-3:hover {
+  background-color: #cc6666;
+ border-top: 2px solid #ec7a37;
+ color: white;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  transform: scale(1.025);
+  z-index: 2;
+  color: white;
+
+
+  &:before, &:after {
+    content: ""; 
+    position: absolute; 
+    background-color: rgb(246,125,53);
+     top: -2px; 
+
+    bottom: -2px; 
+    width: 2px;    
+  }
+
+  &:before { 
+    left: -2px; 
+  }
+  &:after { 
+    right: -2px; 
+  }  
+
+  
+}
+h2, h3, p, ul {
+  margin: 0
+}
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+p {
+  font-size: 0.875em;  
+}
+p, ul {
+  margin:0 0 1.5em
+}
+ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 0 0 0.8333333333333333em;
+  }
+}
+.button {
+  background-color: #9c83aa;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+.uppercase, .button, h2 {
+  text-transform: uppercase;
+}
+sup, .small {
+  font-size: 0.6125em;
+}
+
+.cc{
+  padding:0;
+}
+
+.sec{
+  margin-top: 150px;
+}
+
+
+   .center-outer {
+
+display: table;
+width: 100%;
+height: 200px;
+}
+
+.center-inner {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+/* Essential CSS - Makes the effect work */
+
+img{
+  width: 300px;
+  height: 200px;
+}
+
+.bubbles {
+display: inline-block;
+font-family: arial;
+position: relative;
+}
+
+.bubbles h1 {
+position: relative;
+margin: 1em 0 0;
+font-family: 'Luckiest Guy', cursive;
+z-index: 2;
+}
+
+.individual-bubble {
+position: absolute;
+border-radius: 100%;
+bottom: 10px;
+background-color: maroon;
+z-index: 1;
+}

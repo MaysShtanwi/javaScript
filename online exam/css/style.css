@@ -1,45 +1,52 @@
 body{
    /* fallback for old browsers */
+  margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+ background: #DE6262;  /* fallback for old browsers */
 
-background-color: #ffffcc; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: url('../img/dark.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-size: cover; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-repeat: no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .login-container{
     margin-top: 5%;
     margin-bottom: 5%;
+    border-radius: 20px;
 }
 .login-logo{
     position: relative;
     margin-left: -41.5%;
 }
-.login-logo img{
-    position: absolute;
-    width: 20%;
-    margin-top: 19%;
-    background: #282726;
-    border-radius: 4.5rem;
-    padding: 5%;
-}
 .login-form-1{
-    padding: 9%;
+    padding: 7%;
     background:#282726;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
     height: 700px;
     background-image: url('../img/js1.jfif');
 }
-.login-form-1 h3{
-    text-align: center;
-    margin-bottom:12%;
-    color:#fff;
-}
+
 .login-form-2{
-    padding: 9%;
-    background: #DE6262;
+    padding: 5%;
+    background: #f8ecec;
+    height: 700px;
+ color: #953737;
+ font-size: 20px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
-.login-form-2 h3{
+.login-form-2 h1{
     text-align: center;
-    margin-bottom:12%;
-    color: #fff;
+    margin-bottom:5%;
+    color: #953737;
+    font-weight: bold;
+   
 }
 .btnSubmit{
     font-weight: 600;
@@ -50,12 +57,161 @@ background-color: #ffffcc; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 
     border-radius: 1.5rem;
     padding:2%;
 }
-.btnForgetPwd{
+
+.js{
+	background-image: url('../img/java.png');
+}
+
+
+.sec{
+	background-image: url('../img/updated.jfif');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.frm{
+   
+    background-color: white;
+    border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+
+
+
+}
+label{
+    font-size: 25px;
+}
+
+.bright{
+background-image:linear-gradient(to top,#f9f2ec,#4d0000,#f9f2ec);
+
+}
+
+.nxt{
+    padding-left: 30px;
+    padding-right:30px;
+    border: 5px solid #862d2d;
+    border-radius: 20px;
+    width: 150px;
+    color: #862d2d;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.nxt:hover{
+    background-color: #862d2d;
+    color: white;
+    border:5px solid white;
+}
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #660000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
     color: #fff;
-    font-weight: 600;
-    text-decoration: none;
 }
-.btnForgetPwd:hover{
-    text-decoration:none;
-    color:#fff;
+
+.glow-on-hover:active:after {
+    background: transparent;
 }
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #660000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.frm h2{
+    color:#862d2d;
+}
+
+    .qsn {
+  margin: 10px;
+}
+
+.qsn input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.qsn label {
+
+    display: inline-block;
+    background-color: #660000;
+     border: 3px solid #660000;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 7px 7px 16px #660000;
+
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+.qsn label:hover {
+  background-color: #fff;
+  border: 3px solid #660000;
+  color:  #660000;
+
+}
+
+.qsn input[type="radio"]:focus + label {
+ background-color: #fff;
+  border: 3px solid #660000;
+  color:  #660000;
+}
+
+
+
+
+
