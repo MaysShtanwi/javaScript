@@ -9,12 +9,12 @@ body{
     justify-content: center;
     align-items: center;
    
- background: #DE6262;  /* fallback for old browsers */
+   /* fallback for old browsers */
 
 background-image: url('../img/dark.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 background-size: cover; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background-repeat: no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .login-container{
     margin-top: 5%;
